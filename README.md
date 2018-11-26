@@ -30,9 +30,12 @@ There you will need to enter admin password with is "admin" if you did not chang
 
 ![](Deploy.gif)
 
-Next we need to make a deployment for the Jenkins 
+Next we need to make a deployment for the Jenkins. We use docker image jenkins/jenkins:lts and we open the needed ports. As we stared with one node cluster, NodePort will be combination of node ip and randomized port we will see in the UI, like in image bellow. 
 
 ![](docker-image.png)
+
+
+When we direct the browser to the mentioned socket, we will be greeted with jenkins interface asking for password. To get the randomized password, we will need to go in Rancher UI to Cluster >> quickstart (this is name of the cluster) and then launch kubectl in top right corner. There we need to see name of the pod
 
 
 
@@ -48,3 +51,5 @@ Next we need to make a deployment for the Jenkins
 kubectl exec jenkins-7d97547648-drps7 cat /var/jenkins_home/secrets/initialAdminPassword
 9128cffec397498a81ec998a26513c57
 ```
+
+This is the password 
