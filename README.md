@@ -17,6 +17,15 @@ tarraform init
 
 terraform apply
 ```
+The terraform apply command will give output similar to this 
+```
+Outputs:
+
+rancher-url = [
+    https://54.188.5.4
+]
+```
+
 
 ![](Deploy.gif)
 
@@ -25,6 +34,7 @@ terraform apply
 ``` kubectl get pod
  NAME                       READY     STATUS    RESTARTS   AGE
  jenkins-7d97547648-drps7   1/1       Running   0          49m 
+
 ```
 
 
