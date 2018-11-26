@@ -26,6 +26,7 @@ rancher-url = [
 ]
 ```
 
+There you will need to enter admin password with is "admin" if you did not change it in tfvars file. 
 
 ![](Deploy.gif)
 
