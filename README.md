@@ -30,6 +30,11 @@ There you will need to enter admin password with is "admin" if you did not chang
 
 ![](Deploy.gif)
 
+Next we need to make a deployment for the Jenkins 
+
+![](docker-image.png)
+
+
 
 
 ``` kubectl get pod
