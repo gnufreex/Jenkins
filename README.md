@@ -18,6 +18,7 @@ tarraform init
 terraform apply
 ```
 
+![](Deploy.gif)
 
 
 
