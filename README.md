@@ -1,16 +1,24 @@
 ### Jenkins deployment with Rancher 2 ###
 
-Making Jenkins work with rancher 2.0 is fairly staightforward process. We need to clone
+Making Jenkins work with rancher 2.0 is fairly staightforward process. We need to clone quickstart repository 
 
-git clone https://github.com/rancher/quickstart
+```git clone https://github.com/rancher/quickstart```
 
+change dir into it 
+
+```
 cd quickstart/aws
+```
 
-
-mv terraform.tfvars.example terraform.tfvars
+We need to use example tfwars as a template
+```mv terraform.tfvars.example terraform.tfvars```
 
 
 change the variables accordingly 
+```
+nano terraform.tfvars
+```
+
 
 ```
 tarraform init
