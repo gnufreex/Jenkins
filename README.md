@@ -1,5 +1,11 @@
 ### Jenkins deployment with Rancher 2 ###
 
+
+### Introduction ###
+
+Jenkins is currently most popular Continous Integration server, and it is distributed as open source software under MIT X11 lincense. Written in Java, it runs on most major Operating Systems, but most interesting for us in this article is Linux and Kubernetes container orchestration platform. We are going to deploy a Kubernetes cluster with Rancher 2.0 and on top of that we are going to install Jenkins docker image. 
+
+### Setting up the cluster ###
 Making Jenkins work with rancher 2.0 is fairly staightforward process. We need to clone quickstart repository 
 
 ```git clone https://github.com/rancher/quickstart```
