@@ -6,7 +6,17 @@
 Jenkins is currently most popular Continous Integration server, and it is distributed as open source software under MIT X11 lincense. Written in Java, it runs on most major Operating Systems, but most interesting for us in this article is Linux and Kubernetes container orchestration platform. We are going to deploy a Kubernetes cluster with Rancher 2.0 and on top of that we are going to install Jenkins docker image. 
 
 ### Setting up the cluster ###
-Making Jenkins work with rancher 2.0 is fairly staightforward process. We need to clone quickstart repository 
+If you don't have a Rancher 2.0-managed cluster already, here is instruction how you can make one with Terraform. Obviousy first we are going to install terraform. Download it from hashicorp site https://www.terraform.io/downloads.html
+
+Then unpack it, move it to your $PATH and add executable bit
+
+```unzip terraform_*```
+
+```sudo mv terraform /usr/local/bin/```
+
+```chmod +x /usr/local/bin/terraform```
+
+Now we can clone repo with terrafrom infrastructure plans
 
 ```git clone https://github.com/rancher/quickstart```
 
@@ -24,6 +34,7 @@ change the variables accordingly
 ```
 nano terraform.tfvars
 ```
+Most important part are your access keys, number of instances and size. After that we can initialize terrafrom and run apply
 
 
 ```
@@ -40,7 +51,9 @@ rancher-url = [
 ]
 ```
 
-There you will need to enter admin password with is "admin" if you did not change it in tfvars file. 
+This is your Rancher user interface URL. There you will need to enter admin password with is "admin" if you did not change it in tfvars file. 
+
+### Deploy Jenkins ###
 
 ![](Deploy.gif)
 
