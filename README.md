@@ -48,7 +48,8 @@ When we direct the browser to the mentioned socket, we will be greeted with jenk
 
 
 
-``` kubectl get pod
+```
+ kubectl get pod
  NAME                       READY     STATUS    RESTARTS   AGE
  jenkins-7d97547648-drps7   1/1       Running   0          49m 
 
