@@ -61,8 +61,16 @@ kubectl exec jenkins-7d97547648-drps7 cat /var/jenkins_home/secrets/initialAdmin
 9128cffec397498a81ec998a26513c57
 ```
 
+
+
 This is the initial password you can enter in the jenkins prompt to start installation. 
 
+![](1-initial-pass.png)
 
 
 
+
+![](2-select-plugins.png)
+![](3-install-process.png)
+![](4-create-admin.png)
+![](5-jenkins-operational.png)
