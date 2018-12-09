@@ -62,7 +62,7 @@ Next we need to make a deployment for the Jenkins. We use docker image jenkins/j
 ![](docker-image.png)
 
 
-When we direct the browser to the mentioned socket, we will be greeted with jenkins interface asking for password. To get the randomized password, we will need to go in Rancher UI to Cluster >> quickstart (this is name of the cluster) and then launch kubectl in top right corner. There we need to see name of the pod
+When we direct the browser to the mentioned socket (the ip of your node which you can get from AWS console of by typing kubectl describe nodes, plust the port), we will be greeted with jenkins interface asking for password. To get the randomized password, we will need to go in Rancher UI to Cluster >> quickstart (this is name of the cluster) and then launch kubectl in top right corner. There we need to see name of the pod
 
 
 
@@ -86,10 +86,21 @@ This is the initial password you can enter in the jenkins prompt to start instal
 
 ![](1-initial-pass.png)
 
-
+You will be prompted to select plugins to install. We go with default plugins for now.
 
 
 ![](2-select-plugins.png)
+
+We see here install progress
 ![](3-install-process.png)
+
+After install is done we need to crate at least one admin user:
 ![](4-create-admin.png)
+
+And we will have jenkins operational
+
 ![](5-jenkins-operational.png)
+
+### Conclusion ###
+
+Installation of Jenkins on top of Rancher 2.0 cluster is fairly straightforward, from here you can start by creating your integration and deployment projects and pipelines. Jenkins uses Groovy programing language for writting pipelines and it can help you automate all of the build steps for your software projects, using Pipeline As Code methodology. 
