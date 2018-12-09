@@ -54,7 +54,7 @@ When we direct the browser to the mentioned socket, we will be greeted with jenk
  jenkins-7d97547648-drps7   1/1       Running   0          49m 
 
 ```
-
+With a pod name in mind, run exec command to get password
 
 ```
 kubectl exec jenkins-7d97547648-drps7 cat /var/jenkins_home/secrets/initialAdminPassword
@@ -62,3 +62,7 @@ kubectl exec jenkins-7d97547648-drps7 cat /var/jenkins_home/secrets/initialAdmin
 ```
 
 This is the initial password you can enter in the jenkins prompt to start installation. 
+
+
+
+
